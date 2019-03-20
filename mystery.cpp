@@ -1,27 +1,39 @@
 #include <iostream>
+#include <iostream>
 #include <vector>
 using namespace std;
 
 void print(auto A)
 {
-   for (auto a : A) 
+   for (auto a  : A) 
         cout <<a<<" ";
 
    cout<<endl;
 }
 
-void mystery1(auto& Data)
+void mystery1(vector<int> Data)
 {
+	
   cout<<endl<<"Mystery 1"<<endl<<"---------------------"<<endl;
 
-  for ( int i = 0 ; i < Data.size( ) ; i++)
+  for ( auto i = 0 ; i < Data.size( ) ; i++)
   {
-    for ( int j = 0 ; j < i ; j++)
+    for (auto j = 0 ; j < i ; j++)
 	if ( Data[ i ] < Data[ j ] )
 	    swap( Data[ i ] , Data[ j ] );
 
-    print(Data);
+    print (Data);
   }//end outer for (this brace is needed to include the print statement)
+
+}
+void mystery2(vector<int> Data) {
+
+
+}
+
+
+void mystery3(vector<int> Data) {
+
 
 }
 
