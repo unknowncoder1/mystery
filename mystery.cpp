@@ -26,11 +26,22 @@ void mystery1(vector<int> Data)
   }//end outer for (this brace is needed to include the print statement)
 
 }
-void mystery2(vector<int> Data) {
-
-
+void mystery2(vector<int> Data) 
+{
+	int i, value, index;
+	for (i = 0; i < a.size(); i++)
+	{
+		value = Data[i];
+		index = i;
+		while (index > 0 && Data[index - 1] > value)
+		{
+			Data[index] = Data[index - 1];
+			index = index -1 ;
+		}
+		Data[index] = value;
+		 print (Data);
+	}
 }
-
 
 void mystery3(vector<int> Data) {
 
