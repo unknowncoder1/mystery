@@ -62,7 +62,7 @@ void mystery3(vector<int> Data3)
    {
     val = Data3[nxt];
     mvItem = nxt;
-    while (mvItem > 0 && Data3[mvItem -1 ])
+    while (mvItem > 0 && Data3[mvItem -1 ] > val)
     {
       Data3[mvItem] = Data3[mvItem -1 ];
       mvItem--;
